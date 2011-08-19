@@ -1,0 +1,10 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+fazano:
+  nome: Fazano
+  endereco: Rua Vergueiro
+
+fogo_de_chao:
+  nome: Fogo de Chao
+  endereco: Avenida dos Bandeirantes
+

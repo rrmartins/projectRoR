@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cliente:</b>
+  <!-- @qualificacao.cliente_id -->
+  <%= @qualificacao.cliente.nome %>
+</p>
+
+<p>
+  <b>Restaurante:</b>
+  <%= @qualificacao.restaurante.nome %>
+</p>
+
+<p>
+  <b>Nota:</b>
+  <%= @qualificacao.nota %>
+</p>
+
+<p>
+  <b>Valor gasto:</b>
+  <%= valor_formatado(@qualificacao.valor_gasto) %>
+</p>
+
+<%= link_to 'Edit', edit_qualificacao_path(@qualificacao) %> |
+<%= link_to 'Back', qualificacaos_path %>
+
+<br/>
+<% unless @qualificacao.restaurante.comentarios.empty?  %>
+  <%= comentarios @qualificacao.restaurante %>
+<% end %>
+
+<%= novo_comentario(@qualificacao.restaurante) %>

@@ -1,0 +1,2 @@
+module HelloWordHelper
+end
